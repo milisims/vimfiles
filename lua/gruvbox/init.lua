@@ -3,6 +3,58 @@ local hsl = lush.hsl
 
 -- Original colorscheme from: https://github.com/gruvbox-community/gruvbox
 -- Lush variant from:         https://github.com/npxbr/gruvbox.nvim
+-- See https://color.adobe.com/create/color-wheel
+
+-- local dark0  =  hsl(195, 6, 12)
+-- local dark1  =  hsl(0, 0, 16)
+-- local dark2  =  hsl(20, 5, 22)
+-- local dark3  =  hsl(22, 7, 29)
+-- local dark4  =  hsl(27, 10, 36)
+
+-- local light0 =  hsl(40, 38, 73)
+-- local light1 =  hsl(39, 24, 66)
+-- local light2 =  hsl(35, 17, 59)
+-- local light3 =  hsl(36, 13, 52)
+
+-- local aqua   =  hsl(178, 32, 58)
+-- local laqua  =  hsl(178, 48, 67)
+-- local blue   =  hsl(183, 24, 54)
+-- local lblue  =  hsl(157, 16, 58)
+-- local green  =  hsl(122, 20, 50)
+-- local lgreen =  hsl(123, 23, 65)
+-- local pank   =  hsl(311, 60, 63)
+-- local violet =  hsl(260, 90, 70)
+-- local pank   =  hsl(340, 90, 70)
+
+-- local red    =  hsl(2, 65, 56)
+-- local orange =  hsl(24, 92, 45)
+-- local orange =  hsl(24, 55, 51)
+-- local yellow =  hsl(40, 73, 49)
+
+
+
+-- -- palette
+-- local p = {
+--   comment   = hsl(211, 11 , 41),
+--   markup    = hsl(357, 81 , 69),
+--   constant  = hsl(50 , 100, 80),
+--   operator  = hsl(47 , 77 , 59),
+--   blue      = hsl(200, 68 , 53),
+--   regexp    = hsl(160, 62 , 74),
+--   string    = hsl(70 , 54 , 56),
+--   func      = hsl(34 , 100, 66),
+--   special   = hsl(35 , 70 , 68),
+--   keyword   = hsl(20 , 100, 60),
+--   error     = hsl(0  , 100, 60),
+--   accent    = hsl(35 , 89 , 52),
+--   panel     = hsl(213, 22 , 10),
+--   guide     = hsl(212, 17 , 21),
+--   line      = hsl(207, 18 , 10),
+--   selection = hsl(209, 27 , 20),
+--   fg        = hsl(47 , 32 , 86),
+--   fg_idle   = hsl(211, 18 , 30),
+--   bg        = hsl(210, 25 , 8) ,
+-- }
 
 local colors = {
   dark0_hard     = hsl(195, 6, 12),
@@ -294,6 +346,78 @@ local groups = lush(function()
 
     CursorWord0 { gui = 'underline' },
     CursorWord1 { gui = 'underline' },
+
+    -- Cursor       { gui = 'inverse' },
+    -- lCursor      { Cursor },
+    -- iCursor      { Cursor },
+    -- vCursor      { Cursor },
+    -- CursorIM     { Cursor },
+
+    -- pythonBuiltin     { fg = orange },
+    -- pythonBuiltinObj  { fg = orange },
+    -- pythonBuiltinFunc { fg = orange },
+    -- pythonFunction    { fg = aqua },
+    -- pythonDecorator   { fg = red },
+    -- pythonInclude     { fg = blue },
+    -- pythonImport      { fg = blue },
+    -- pythonRun         { fg = blue },
+    -- pythonCoding      { fg = blue },
+    -- pythonOperator    { fg = red },
+    -- pythonException   { fg = red },
+    -- pythonExceptions  { fg = purple },
+    -- pythonBoolean     { fg = purple },
+    -- pythonDot         { fg = fg3 },
+    -- pythonConditional { fg = red },
+    -- pythonRepeat      { fg = red },
+    -- pythonDottedName  { fg = green, gui = 'bold' },
+
+    -- TSNone               {},
+    -- TSError              { Error },
+    -- TSTitle              { Title },
+    -- TSLiteral            { String },
+    -- TSURI                { Underlined },
+    -- TSVariable           { Special },
+    -- TSPunctDelimiter     { Delimiter },
+    -- TSPunctBracket       { Delimiter },
+    -- TSPunctSpecial       { Delimiter },
+    -- TSConstant           { Constant },
+    -- TSConstBuiltin       { Special },
+    -- TSConstMacro         { Define },
+    -- TSString             { String },
+    -- TSStringRegex        { String },
+    -- TSStringEscape       { SpecialChar },
+    -- TSCharacter          { Character },
+    -- TSNumber             { Number },
+    -- TSBoolean            { Boolean },
+    -- TSFloat              { Float },
+    -- TSFunction           { Function },
+    -- TSFuncBuiltin        { Special },
+    -- TSFuncMacro          { Macro },
+    -- TSParameter          { Identifier },
+    -- TSParameterReference { TSParameter },
+    -- TSMethod             { Function },
+    -- TSField              { Identifier },
+    -- TSProperty           { Identifier },
+    -- TSConstructor        { Special },
+    -- TSAnnotation         { PreProc },
+    -- TSAttribute          { PreProc },
+    -- TSNamespace          { Include },
+    -- TSConditional        { Conditional },
+    -- TSRepeat             { Repeat },
+    -- TSLabel              { Label },
+    -- TSOperator           { Operator },
+    -- TSKeyword            { Keyword },
+    -- TSKeywordFunction    { Keyword },
+    -- TSKeywordOperator    { TSOperator },
+    -- TSException          { Exception },
+    -- TSType               { Type },
+    -- TSTypeBuiltin        { Type },
+    -- TSInclude            { Include },
+    -- TSVariableBuiltin    { Special },
+    -- TSText               { TSNone },
+    -- TSStrong             { gui = 'bold' },
+    -- TSEmphasis           { gui = 'italic' },
+    -- TSUnderline          { gui = 'underline' },
 
   }
 end)

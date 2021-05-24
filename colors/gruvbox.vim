@@ -2,12 +2,6 @@ hi clear
 syntax reset
 set t_Co=256
 let g:colors_name='gruvbox'
-highlight! link orgListTag Comment
-highlight orgNodeProperty guifg=#B7808F guibg=NONE guisp=NONE gui=NONE
-highlight! link orgNodeMultiProperty orgNodeProperty
-highlight! link orgPropertyDrawerEnds Comment
-highlight! link orgPropertyName PreProc
-highlight! link orgURI Comment
 highlight! link orgLinkEnds Conceal
 highlight! link orgLinkDescription Tag
 highlight! link orgSetting Error
@@ -145,3 +139,9 @@ highlight! link orgTimeDelay Comment
 highlight! link orgTimestampElements Comment
 highlight! link orgListLeader Constant
 highlight! link orgListCheck Todo
+highlight! link orgListTag Comment
+highlight orgNodeProperty guifg=#B7808F guibg=NONE guisp=NONE gui=NONE
+highlight! link orgNodeMultiProperty orgNodeProperty
+highlight! link orgPropertyDrawerEnds Comment
+highlight! link orgPropertyName PreProc
+highlight! link orgURI Comment

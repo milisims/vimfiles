@@ -9,5 +9,5 @@ nnoremap <buffer> [k :call myorg#agenda_kwcycle(-v:count1)<Cr>
 nnoremap <silent> <buffer> q :q\|unlet! g:last_agenda\|let g:agenda#date = 'tomorrow'<Cr>
 
 command! -nargs=+ -buffer SetDate let g:agenda#date = <q-args>
- 
+
 " command!
